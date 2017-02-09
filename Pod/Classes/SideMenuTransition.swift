@@ -39,11 +39,12 @@ open class SideMenuTransition: UIPercentDrivenInteractiveTransition {
                 return
             }
             
-            if let menuShrinkBackgroundColor = SideMenuManager.menuAnimationBackgroundColor {
+           /* if let menuShrinkBackgroundColor = SideMenuManager.menuAnimationBackgroundColor {
                 statusBarView.backgroundColor = menuShrinkBackgroundColor
             } else {
                 statusBarView.backgroundColor = UIColor.black
-            }
+            } */
+            statusBarView.isHidden = true
             statusBarView.isUserInteractionEnabled = false
         }
     }
